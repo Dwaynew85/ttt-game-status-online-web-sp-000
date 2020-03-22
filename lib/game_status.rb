@@ -13,10 +13,14 @@ WIN_COMBINATIONS = [
 [0,4,8],
 [2,4,6]
 ]
+
+
 def won?(board)
-  if  board.include?(WIN_COMBINATIONS)
-    return true
-  else
-    return false
+  WIN_COMBINATIONS.each do |wins|
+    if board.any? != wins.any?
+      false
+    else
+      true
+    end
   end
 end
