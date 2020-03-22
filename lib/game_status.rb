@@ -33,10 +33,3 @@ def won?(board)
   }
   return false
 end
-
-def full? = board.all? do |full|
-  full == "X" || "O"
-  true
-else
-  false
-end
